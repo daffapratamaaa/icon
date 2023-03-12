@@ -3,10 +3,12 @@ function generateGreeting() {
   var currentHour = currentDate.getHours();
   var greetingMessage;
 
-  if (currentHour < 12) {
+  if (currentHour < 10) {
     greetingMessage = "Selamat Pagi!";
-  } else if (currentHour < 18) {
+  } else if (currentHour < 15) {
     greetingMessage = "Selamat Siang!";
+  } else if (currentHour < 19) {
+    greetingMessage = "Selamat Sore!";
   } else {
     greetingMessage = "Selamat Malam!";
   }
