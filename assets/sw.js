@@ -10,9 +10,9 @@ workbox.core.setCacheNameDetails({
   runtime: 'run-time'
 });
 
-const FALLBACK_HTML_URL = 'https://cdn.jsdelivr.net/gh/daffapratamaaa/icon/assets/offline.html';
+const FALLBACK_HTML_URL = 'https://raw.githubusercontent.com/daffapratamaaa/icon/main/assets/offline.html';
 const version = workbox.core.cacheNames.suffix;
-workbox.precaching.precacheAndRoute([{url: FALLBACK_HTML_URL, revision: null},{url: 'https://cdn.jsdelivr.net/gh/daffapratamaaa/icon/assets/manifest.json', revision: null},{url: 'https://cdn.jsdelivr.net/gh/daffapratamaaa/icon/favicon.ico', revision: null}]);
+workbox.precaching.precacheAndRoute([{url: FALLBACK_HTML_URL, revision: null},{url: 'https://raw.githubusercontent.com/daffapratamaaa/icon/main/assets/manifest.json', revision: null},{url: 'https://cdn.jsdelivr.net/gh/daffapratamaaa/icon/favicon.ico', revision: null}]);
 
 workbox.routing.setDefaultHandler(new workbox.strategies.NetworkOnly());
 
