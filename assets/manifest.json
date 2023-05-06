@@ -113,6 +113,6 @@
     }
   ],
   "serviceworker": {
-    "src": "https://cdn.jsdelivr.net/gh/daffapratamaaa/icon/assets/sw.js"
+    "src": "https://raw.githubusercontent.com/daffapratamaaa/icon/main/assets/sw.js"
   }
 }
